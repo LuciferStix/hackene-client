@@ -1,0 +1,17 @@
+.container-chat{
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+    font-size: 1rem;
+    background-color: #131324;
+    .container-chat-interface{
+    height:85vh;
+    width:85vw;
+    display:grid;
+    grid-template-columns: 35% 65%;
+    }
+}
