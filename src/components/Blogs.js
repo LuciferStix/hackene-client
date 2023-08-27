@@ -14,14 +14,14 @@ function Blogs() {
   };
   useEffect(() => {
     sendRequest().then((data) => {
-      setBlogs(data.blogs)
+      setBlogs(data.events)
       console.log(data)
     });
   }, []);
 
   return (
-
-      <div className="row row-cols-1 row-cols-md-3 g-4 ">
+      <>
+       {/* <div className="row row-cols-1 row-cols-md-3 g-4 "> */}
 
         {blogs &&
           blogs.map((blog, index) => (
@@ -35,7 +35,8 @@ function Blogs() {
               key={blog.id}
             />
           ))}
-      </div>
+       {/* </div> */}
+      </>
   );
 }
 

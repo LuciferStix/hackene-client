@@ -59,11 +59,11 @@ const Blog = ({ title, content, image, userName, isUser, id }) => {
     //       </Box>
     //     )}
     //     <CardHeader
-    //       avatar={
-    //         <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-    //           {userName && userName.charAt(0)}
-    //         </Avatar>
-    //       }
+    //       // avatar={
+    //       //   <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+    //       //     {userName && userName.charAt(0)}
+    //       //   </Avatar>
+    //       // }
     //       title={title}
     //       subheader=""
     //     />
