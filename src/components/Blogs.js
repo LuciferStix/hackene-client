@@ -6,7 +6,7 @@ function Blogs() {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get(`${process.env.HOST}/api/blog`)
+      .get(`https://hackene-server.vercel.app/api/blog`)
       .catch((err) => console.log(err));
 
     const data = await res.data;
