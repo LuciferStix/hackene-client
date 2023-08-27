@@ -6,7 +6,7 @@ function Blogs() {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get("http://localhost:8000/api/blog")
+      .get(`${process.env.HOST}/api/blog`)
       .catch((err) => console.log(err));
 
     const data = await res.data;
@@ -21,7 +21,7 @@ function Blogs() {
 
   return (
       <>
-       {/* <div className="row row-cols-1 row-cols-md-3 g-4 "> */}
+       <div className="row row-cols-1 row-cols-md-3 g-4 ">
 
         {blogs &&
           blogs.map((blog, index) => (
@@ -35,7 +35,7 @@ function Blogs() {
               key={blog.id}
             />
           ))}
-       {/* </div> */}
+       </div>
       </>
   );
 }
