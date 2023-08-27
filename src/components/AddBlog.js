@@ -32,6 +32,7 @@ const AddBlog = () => {
 
     const data = await res.data;
     return data;
+    
   };
 
   const handleSubmit = (event) => {
