@@ -14,12 +14,12 @@ function UserBlogs() {
   };
   useEffect(() => {
     sendRequest().then((data) => setUser(data.user));
+    // console.log(user.blogs)
   }, []);
 
 
   return (
     <div>
-      {" "}
       {user &&
         user.blogs &&
         user.blogs.map((blog, index) => (
